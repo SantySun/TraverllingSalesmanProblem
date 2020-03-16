@@ -22,4 +22,4 @@ remove_reverse = [list(v) for k, v in enumerate(lists) if v[::-1] not in lists[:
 results = list(map(round_distance, remove_reverse))
 results = sorted(results, key=lambda pair : pair[0])
 print("Given points are", l)
-print('The shortest round distance of given points is {0} the route is {1}', results[0])
+print('The shortest round distance of given points is {0}, and the route is {1}'.format(results[0][0], results[0][1]))
